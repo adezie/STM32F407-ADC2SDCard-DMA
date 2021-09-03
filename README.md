@@ -1,0 +1,2 @@
+# STM32F407-ADC2SDCard-DMA
+using STM32F407, with dummy ADC sampling over 1.4 Ms/s, and SDcard data logger with 2.2 MB/s speed this code using ADC to Buffer(uint16_t) after the buffer that contain ADC Value has been filled activated a callback that give semaphore to activate Memory to Memory over DMA i configure it to convert uint16_t data to uint8_t data to be saved onto sdcard with this configuration, i able to get logging speed about 2.2 MB/s
